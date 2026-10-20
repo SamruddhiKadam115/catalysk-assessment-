@@ -1,0 +1,11 @@
+row_id,order_id,event_id,anomaly_type,details
+R004,O101,E004,INVALID_TRANSITION,START -> PAID is not allowed.
+R006,O102,E005,DUPLICATE_EVENT,Repeated event ID with matching event identity.
+R008,O104,E006,EVENT_ID_CONFLICT,Repeated event ID with differing event identity.
+R010,O105,E008,INVALID_TRANSITION,PLACED -> SHIPPED is not allowed.
+R011,O106,E009,INVALID_TIMESTAMP,event_time is not a valid supported UTC timestamp.
+R012,O107,E010,MISSING_TIMESTAMP,event_time is empty.
+R013,,E011,MISSING_ORDER_ID,order_id is empty.
+R014,O108,,MISSING_EVENT_ID,event_id is empty.
+R015,O109,E012,UNKNOWN_EVENT,event_type is not in the supported vocabulary.
+R021,O112,E018,INVALID_TRANSITION,PLACED -> PLACED is not allowed.
